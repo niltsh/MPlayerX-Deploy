@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <channel>
+      <title>MPlayerX's Changelog</title>
+      <link>https://raw.github.com/niltsh/MPlayerX-Deploy/master/appcast.xml</link>
+      <description>MPlayerX</description>
+      <language>en</language>      
+         <item>
+            <title>Version 1.0.16</title>
+			<description><![CDATA[
+			
+				<h3>Move back to Sparkle</h3>
+				
+            ]]></description>
+            <pubDate>Mon, 19 Jul 2010 01:42:02 +0900</pubDate>
+            <enclosure url="http://mplayerx.googlecode.com/svn/releases/MPlayerX.zip"
+					   sparkle:version="1800"
+					   sparkle:shortVersionString="1.0.16"
+					   length="13166008"
+					   type="application/octet-stream"
+					   sparkle:dsaSignature="MCwCFELMXhoB1K1D9hCHRPmxU/VGzrtLAhRSYe+t+3sBgWTL9LGqSm27pF6mHA==" />
+         </item>
+   </channel>
+</rss>
