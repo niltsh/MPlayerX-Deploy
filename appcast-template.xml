@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>MPlayerX's Changelog</title>
+        <link>https://raw.github.com/niltsh/MPlayerX-Deploy/master/appcast.xml</link>
+        <description>MPlayerX</description>
+        <language>en</language>
+        <item>
+            <title>Version %VerStr%</title>
+            <description><![CDATA[
+
+            ]]></description>
+            <pubDate>%Time%</pubDate>
+            <enclosure url="https://raw.github.com/niltsh/MPlayerX-Deploy/master/releases/MPlayerX-%VerStr%.zip"
+                       sparkle:version="%VerNum%"
+                       sparkle:shortVersionString="%VerStr%"
+                       length="%FileSize%"
+                       type="application/octet-stream"
+                       sparkle:dsaSignature="%Signature%" />
+        </item>
+    </channel>
+</rss>
