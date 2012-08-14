@@ -11,7 +11,7 @@
 
             ]]></description>
             <pubDate>%Time%</pubDate>
-            <enclosure url="https://github.com/downloads/niltsh/MPlayerX-Deploy/MPlayerX-%VerStr%.zip"
+            <enclosure url="http://mplayerx.org/downloads/MPlayerX-%VerStr%.zip"
                        sparkle:version="%VerNum%"
                        sparkle:shortVersionString="%VerStr%"
                        length="%FileSize%"

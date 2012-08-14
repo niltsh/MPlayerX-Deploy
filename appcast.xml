@@ -6,17 +6,17 @@
         <description>MPlayerX</description>
         <language>en</language>
         <item>
-            <title>Version 1.0.15</title>
+            <title>Version 1.0.16</title>
             <description><![CDATA[
 
             ]]></description>
-            <pubDate>Sun, 05 Aug 2012 21:08:57 +0900</pubDate>
-            <enclosure url="https://github.com/downloads/niltsh/MPlayerX-Deploy/MPlayerX-1.0.15.zip"
-                       sparkle:version="1599"
-                       sparkle:shortVersionString="1.0.15"
-                       length="34294741"
+            <pubDate>Tue, 14 Aug 2012 22:15:04 +0900</pubDate>
+            <enclosure url="http://mplayerx.org/downloads/MPlayerX-1.0.16.zip"
+                       sparkle:version="1605"
+                       sparkle:shortVersionString="1.0.16"
+                       length="34367563"
                        type="application/octet-stream"
-                       sparkle:dsaSignature="MCwCFGusAk2JyqPa2W21wwOpjswaYd0/AhQDfrMSjdoPvzR96Zti/IqB/2kRDA==" />
+                       sparkle:dsaSignature="MCwCFErHN6z24M23o2aYszcRW72wXqoCAhRC2kutWoxF5fIRUtai8ZVuCZc0jw==" />
         </item>
     </channel>
 </rss>
