@@ -6,11 +6,11 @@
         <description>MPlayerX</description>
         <language>en</language>
         <item>
-            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
             <title>Version 1.0.17</title>
             <description><![CDATA[
                 <p>2012/09/07</p>
                 <div><ul>
+                    <li>Fix crashing on 10.6(Snow Leopard).</li>
                     <li>Hardware Accelerated Video Decoding boosted.</li>
                     <li>New: scripting support added, which means <a href="https://flutterapp.com">Flutter</a>-ready now.</li>
                     <li>Fix: three fingers swiping stopped working.</li>
@@ -21,13 +21,13 @@
                     <li>Fix: the position of the play control always reset when app exits.</li>
                 </ul></div>
             ]]></description>
-            <pubDate>Fri, 07 Sep 2012 16:02:52 +0900</pubDate>
+            <pubDate>Fri, 07 Sep 2012 23:23:04 +0900</pubDate>
             <enclosure url="http://mplayerx.googlecode.com/files/MPlayerX-1.0.17.zip"
-                       sparkle:version="1627"
+                       sparkle:version="1630"
                        sparkle:shortVersionString="1.0.17"
-                       length="34431074"
+                       length="34431129"
                        type="application/octet-stream"
-                       sparkle:dsaSignature="MC0CFQCfzJeeLRVXsx7Vg1z4QTJVb0RjhgIUYWFTaxt+ruzQs4s81JcxkRCpimc=" />
+                       sparkle:dsaSignature="MC0CFQC1j9srzd7ZsXlLFfrLUV25iNI9IwIUEnngEEET6SU18WubG32Yx2ESFXc=" />
         </item>
     </channel>
 </rss>
