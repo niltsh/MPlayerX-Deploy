@@ -6,31 +6,27 @@
         <description>MPlayerX</description>
         <language>en</language>
         <item>
-            <title>Version 1.0.16</title>
+            <title>Version 1.0.17</title>
             <description><![CDATA[
-                <p class="releaseTime">2012/08/14</p>
-                <div class="releaseNote">
-                    <ul>
-                        <li>New: support for Mountain Lion</li>
-                        <li>New: support for Retina Macbook Pro</li>
-                        <li>New: add Hardware Accelerated Video Decoding</li>
-                        <li>New: retrieve the name and language of subtitle tracks</li>
-                        <li>New: show current/total time when playback resumed </li>
-                        <li>New: refine file type icons </li>
-                        <li>Pref: more options for saving snapshots</li> 
-                        <li>Translation: add Hungarian </li>
-                        <li>Fix: seeking with arrow keys or control make playback rewind</li> 
-                        <li>Fix: sometimes "Not supported" panel pops up incorrectly and refuse to play</li>
-                    </ul>
-                </div>
+                <p>2012/09/07</p>
+                <div><ul>
+                    <li>Hardware Accelerated Video Decoding boosted.</li>
+                    <li>New: scripting support added, which means <a href="https://flutterapp.com">Flutter</a>-ready now.</li>
+                    <li>Fix: three fingers swiping stopped working.</li>
+                    <li>Fix: in some mp3 and m4a files with album art, time/seek stopped working.</li>
+                    <li>Fix: when paused, display dimmed and Mac falls to sleep.</li>
+                    <li>Fix: video is wrongly decoded in some RealMedia files.</li>
+                    <li>Fix: the remaining time is wrong when playback speed is not 1x.</li>
+                    <li>Fix: the position of the play control always reset when app exits.</li>
+                </ul></div>
             ]]></description>
-            <pubDate>Tue, 14 Aug 2012 22:15:04 +0900</pubDate>
-            <enclosure url="http://mplayerx.googlecode.com/files/MPlayerX-1.0.16.zip"
-                       sparkle:version="1605"
-                       sparkle:shortVersionString="1.0.16"
-                       length="34367563"
+            <pubDate>Fri, 07 Sep 2012 16:02:52 +0900</pubDate>
+            <enclosure url="http://mplayerx.googlecode.com/files/MPlayerX-1.0.17.zip"
+                       sparkle:version="1627"
+                       sparkle:shortVersionString="1.0.17"
+                       length="34431074"
                        type="application/octet-stream"
-                       sparkle:dsaSignature="MCwCFErHN6z24M23o2aYszcRW72wXqoCAhRC2kutWoxF5fIRUtai8ZVuCZc0jw==" />
+                       sparkle:dsaSignature="MC0CFQCfzJeeLRVXsx7Vg1z4QTJVb0RjhgIUYWFTaxt+ruzQs4s81JcxkRCpimc=" />
         </item>
     </channel>
 </rss>
