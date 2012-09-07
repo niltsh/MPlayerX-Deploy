@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>MPlayerX's Changelog</title>
+        <link>https://raw.github.com/niltsh/MPlayerX-Deploy/master/appcast.xml</link>
+        <description>MPlayerX</description>
+        <language>en</language>
+        <item>
+            <sparkle:minimumSystemVersion>10.8.2</sparkle:minimumSystemVersion>
+            <title>Version 1.0.17</title>
+            <description><![CDATA[
+                <p>2012/09/07</p>
+                <div><ul>
+                    <li>Hardware Accelerated Video Decoding boosted.</li>
+                    <li>New: scripting support added, which means <a href="https://flutterapp.com">Flutter</a>-ready now.</li>
+                    <li>Fix: three fingers swiping stopped working.</li>
+                    <li>Fix: in some mp3 and m4a files with album art, time/seek stopped working.</li>
+                    <li>Fix: when paused, display dimmed and Mac falls to sleep.</li>
+                    <li>Fix: video is wrongly decoded in some RealMedia files.</li>
+                    <li>Fix: the remaining time is wrong when playback speed is not 1x.</li>
+                    <li>Fix: the position of the play control always reset when app exits.</li>
+                </ul></div>
+            ]]></description>
+            <pubDate>Fri, 07 Sep 2012 16:02:52 +0900</pubDate>
+            <enclosure url="http://mplayerx.googlecode.com/files/MPlayerX-1.0.17.zip"
+                       sparkle:version="1627"
+                       sparkle:shortVersionString="1.0.17"
+                       length="34431074"
+                       type="application/octet-stream"
+                       sparkle:dsaSignature="MC0CFQCfzJeeLRVXsx7Vg1z4QTJVb0RjhgIUYWFTaxt+ruzQs4s81JcxkRCpimc=" />
+        </item>
+    </channel>
+</rss>
