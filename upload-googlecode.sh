@@ -13,6 +13,8 @@ if [[ -f $BIN ]]; then
 	GCPSWD=`security find-generic-password -w -s "MPlayerX-GoogleCode"`
 
 	./scripts/googlecode_upload.py -p mplayerx -s $1 -u $GCUSER -w $GCPSWD $BIN
+
+	md5 $BIN
 else
 	echo "$BIN does not exists."
 fi
