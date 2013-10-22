@@ -6,6 +6,8 @@ if [[ $# != 1 ]]; then
 	exit
 fi
 
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH
+
 RLSBIN=$1
 RLSAPP="./MPlayerX.app"
 KEYTEMP="key.txt"
