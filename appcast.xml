@@ -6,28 +6,29 @@
         <description>MPlayerX</description>
         <language>en</language>
         <item>
-            <title>Version 1.0.17</title>
+            <title>Version 1.0.19</title>
             <description><![CDATA[
-                <p>2012/09/07</p>
+                <p>2013/10/25</p>
                 <div><ul>
-                    <li>Fix crashing on 10.6(Snow Leopard).</li>
-                    <li>Hardware Accelerated Video Decoding boosted.</li>
-                    <li>New: scripting support added, which means <a href="https://flutterapp.com">Flutter</a>-ready now.</li>
-                    <li>Fix: three fingers swiping stopped working.</li>
-                    <li>Fix: in some mp3 and m4a files with album art, time/seek stopped working.</li>
-                    <li>Fix: when paused, display dimmed and Mac falls to sleep.</li>
-                    <li>Fix: video is wrongly decoded in some RealMedia files.</li>
-                    <li>Fix: the remaining time is wrong when playback speed is not 1x.</li>
-                    <li>Fix: the position of the play control always reset when app exits.</li>
+                    <li>Fix a serious memleak bug in mplayer, please update to this version and drop 1.0.18.</li>
                 </ul></div>
+
+                <p>1.0.18 - 2013/10/23</p>
+                <div><ul>
+                <li>Fix: compatible issues with Mavericks (10.9)</li>
+                <li>Fix: time slider mispositioning</li>
+                <li>Fix: could not disable subtitles in mts files</li>
+                <li>...</li>
+                </ul></div>
+
             ]]></description>
-            <pubDate>Fri, 07 Sep 2012 23:23:04 +0900</pubDate>
-            <enclosure url="http://mplayerx.googlecode.com/files/MPlayerX-1.0.17.zip"
-                       sparkle:version="1630"
-                       sparkle:shortVersionString="1.0.17"
-                       length="34431129"
+            <pubDate>Fri, 25 Oct 2013 01:41:30 +0900</pubDate>
+            <enclosure url="http://mplayerx.googlecode.com/files/MPlayerX-1.0.19.zip"
+                       sparkle:version="1686"
+                       sparkle:shortVersionString="1.0.19"
+                       length="35256766"
                        type="application/octet-stream"
-                       sparkle:dsaSignature="MC0CFQC1j9srzd7ZsXlLFfrLUV25iNI9IwIUEnngEEET6SU18WubG32Yx2ESFXc=" />
+                       sparkle:dsaSignature="MCwCFHbEEsOJidkae6u3IYEPKPEdy8AEAhRrfro3OY7dHFMKUZoRI0F02MrGyg==" />
         </item>
     </channel>
 </rss>
