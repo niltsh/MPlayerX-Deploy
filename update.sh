@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 
 if [[ $# != 1 ]]; then
@@ -8,41 +8,40 @@ fi
 
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH
 
-RLSBIN=$1
-RLSAPP="./MPlayerX.app"
+RLSAPP=${1%/}
 KEYTEMP="key.txt"
 PRIVKEY="key2.txt"
 
-if [[ -d $RLSBIN ]]; then
+CURDIR="$PWD"
+appName=`basename "$RLSAPP"`
 
-	# 删除临时存储的MPlayerX.app文件
-	rm -Rf $RLSAPP
-	# 将 编译好的app文件 拷贝到当前文件夹
-	cp -R $RLSBIN $RLSAPP
+if [[ -d "$RLSAPP" ]]; then
 
 	# 得到版本信息
-	shortVer=`ruby scripts/getShortVersionString.rb $RLSAPP`
-	echo "ShortVersionString:\t" $shortVer
+	shortVer=`/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby scripts/getShortVersionString.rb "$RLSAPP"`
+	echo "ShortVersionString:      " $shortVer
 
-	verNum=`ruby scripts/getVersion.rb $RLSAPP`
-	echo "VersionNumber:\t\t" $verNum
+	verNum=`/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby scripts/getVersion.rb "$RLSAPP"`
+	echo "VersionNumber:           " $verNum
 
 	# 获取 压缩文件文件名
-	DEPLOYBIN="./releases/MPlayerX-$shortVer.zip"
-	
-	# 如果之前有拷贝就先删除
+	DEPLOYBIN="${CURDIR}/releases/MPlayerX-$shortVer.zip"
+
+    # 如果之前有拷贝就先删除
 	rm -Rf $DEPLOYBIN
 
 	# 压缩APP文件
-	zip -ry $DEPLOYBIN $RLSAPP > /dev/null
+    cd "$RLSAPP/.."
+    zip -ry "$DEPLOYBIN" "$appName" > /dev/null
+    cd "${CURDIR}"
 
 	# 获取压缩文件尺寸
-	fileSize=`stat -f %z $DEPLOYBIN`
-	echo "FileSize:\t\t" $fileSize
+	fileSize=`stat -f %z "$DEPLOYBIN"`
+	echo "FileSize:                " $fileSize
 
 	# 获取压缩文件修改时间
-	binTime=`stat -f %Sm -t "%a, %d %b %Y %H:%M:%S" $DEPLOYBIN`" +0900"
-	echo "BinTime:\t\t" $binTime
+	binTime=`stat -f %Sm -t "%a, %d %b %Y %H:%M:%S" "$DEPLOYBIN"`" +0900"
+	echo "BinTime:                 " $binTime
 
 	# 获取压缩文件 签名
 	security find-generic-password -g -s "MPlayerX Private Key" 1>/dev/null 2>$KEYTEMP
@@ -51,12 +50,9 @@ if [[ -d $RLSBIN ]]; then
 
 	signature=`openssl dgst -sha1 -binary $DEPLOYBIN | openssl dgst -dss1 -sign $PRIVKEY | openssl enc -base64`
 	rm -Rf $PRIVKEY
-	echo "Signature:" $signature
+	echo "Signature:               " $signature
 
 	cat appcast-template.xml | sed -e "s|%VerStr%|${shortVer}|g" | sed -e "s|%VerNum%|${verNum}|g" | sed -e "s|%Time%|${binTime}|g" | sed -e "s|%FileSize%|${fileSize}|g" | sed -e "s|%Signature%|${signature}|g" > appcast.xml
-
-	rm -Rf $RLSAPP
-	rm -Rf $RLSBIN
 else
 	echo "没有找到二进制文件，请确认。"
 fi
