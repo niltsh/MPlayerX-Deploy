@@ -6,29 +6,23 @@
         <description>MPlayerX</description>
         <language>en</language>
         <item>
-            <title>Version 1.0.19</title>
+            <title>Version 1.0.20</title>
             <description><![CDATA[
-                <p>2013/10/25</p>
+                <p>2013/11/28</p>
                 <div><ul>
-                    <li>Fix a serious memleak bug in mplayer, please update to this version and drop 1.0.18.</li>
+                    <li>fix gray bar displayed when using fullscreen in 10.9</li>
+                    <li>fix Auto Play List stop working for some files</li>
+                    <li>fix crashes when using video tuner</li>
+                    <li>compatability fixes</li>
                 </ul></div>
-
-                <p>1.0.18 - 2013/10/23</p>
-                <div><ul>
-                <li>Fix: compatible issues with Mavericks (10.9)</li>
-                <li>Fix: time slider mispositioning</li>
-                <li>Fix: could not disable subtitles in mts files</li>
-                <li>...</li>
-                </ul></div>
-
             ]]></description>
-            <pubDate>Fri, 25 Oct 2013 01:41:30 +0900</pubDate>
-            <enclosure url="http://mplayerx.googlecode.com/files/MPlayerX-1.0.19.zip"
-                       sparkle:version="1686"
-                       sparkle:shortVersionString="1.0.19"
-                       length="35256766"
+            <pubDate>Wed, 27 Nov 2013 23:42:11 +0900</pubDate>
+            <enclosure url="http://mplayerx.googlecode.com/files/MPlayerX-1.0.20.zip"
+                       sparkle:version="1696"
+                       sparkle:shortVersionString="1.0.20"
+                       length="35259260"
                        type="application/octet-stream"
-                       sparkle:dsaSignature="MCwCFHbEEsOJidkae6u3IYEPKPEdy8AEAhRrfro3OY7dHFMKUZoRI0F02MrGyg==" />
+                       sparkle:dsaSignature="MC0CFQCoIxTuROF0DWn4loKnBBPdcNPLVgIUXmjIyVP3H0XOzKp3IMnC7evtyH0=" />
         </item>
     </channel>
 </rss>
