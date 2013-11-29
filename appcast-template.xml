@@ -8,7 +8,7 @@
         <item>
             <title>Version %VerStr%</title>
             <description><![CDATA[
-                <p>2012/Month/Date</p>
+                <p>%ReleaseDate%</p>
                 <div><ul>
                     <li></li>
                 </ul></div>

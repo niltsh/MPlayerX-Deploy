@@ -42,6 +42,7 @@ if [[ -d "$RLSAPP" ]]; then
 	# 获取压缩文件修改时间
 	binTime=`stat -f %Sm -t "%a, %d %b %Y %H:%M:%S" "$DEPLOYBIN"`" +0900"
 	echo "BinTime:                 " $binTime
+	releaseDate=`stat -f %Sm -t "%Y/%m/%d" "$DEPLOYBIN"`
 
 	# 获取压缩文件 签名
 	security find-generic-password -g -s "MPlayerX Private Key" 1>/dev/null 2>$KEYTEMP
@@ -52,7 +53,7 @@ if [[ -d "$RLSAPP" ]]; then
 	rm -Rf $PRIVKEY
 	echo "Signature:               " $signature
 
-	cat appcast-template.xml | sed -e "s|%VerStr%|${shortVer}|g" | sed -e "s|%VerNum%|${verNum}|g" | sed -e "s|%Time%|${binTime}|g" | sed -e "s|%FileSize%|${fileSize}|g" | sed -e "s|%Signature%|${signature}|g" > appcast.xml
+	cat appcast-template.xml | sed -e "s|%ReleaseDate%|${releaseDate}|g" | sed -e "s|%VerStr%|${shortVer}|g" | sed -e "s|%VerNum%|${verNum}|g" | sed -e "s|%Time%|${binTime}|g" | sed -e "s|%FileSize%|${fileSize}|g" | sed -e "s|%Signature%|${signature}|g" > appcast.xml
 else
 	echo "没有找到二进制文件，请确认。"
 fi
