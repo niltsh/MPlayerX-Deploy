@@ -6,23 +6,25 @@
         <description>MPlayerX</description>
         <language>en</language>
         <item>
-            <title>Version 1.0.20</title>
+            <title>Version 1.0.21</title>
             <description><![CDATA[
-                <p>2013/11/28</p>
+                <p>2013/12/26</p>
                 <div><ul>
-                    <li>fix gray bar displayed when using fullscreen in 10.9</li>
-                    <li>fix Auto Play List stop working for some files</li>
-                    <li>fix crashes when using video tuner</li>
-                    <li>compatability fixes</li>
+                    <li>Fix: output image is blurry.</li>
+                    <li>Add support directly playing videos on vimeo.com, youku.com, instagram.com, traileraddict.com, techtv.mit.edu, and so on.</li>
+                    <li>Simplification when directly play online videos, now you could enjoy youtube, vimeo with just one click or drag&drop.</li>
+                    <li style="list-style: none;">For details, please take a look at <a href="http://blog.mplayerx.org/blog/2013/12/26/its-getting-easier-to-open-online-videos/"><strong>this link</strong></a></li>
+                    <li>More responsive when opening URL.</li>
+                    <li>Fix: memleak in mplayer</li>
                 </ul></div>
             ]]></description>
-            <pubDate>Wed, 27 Nov 2013 23:42:11 +0900</pubDate>
-            <enclosure url="http://mplayerx.googlecode.com/files/MPlayerX-1.0.20.zip"
-                       sparkle:version="1696"
-                       sparkle:shortVersionString="1.0.20"
-                       length="35259260"
+            <pubDate>Thu, 26 Dec 2013 15:23:30 +0900</pubDate>
+            <enclosure url="http://mplayerx.googlecode.com/files/MPlayerX-1.0.21.zip"
+                       sparkle:version="1718"
+                       sparkle:shortVersionString="1.0.21"
+                       length="35476468"
                        type="application/octet-stream"
-                       sparkle:dsaSignature="MC0CFQCoIxTuROF0DWn4loKnBBPdcNPLVgIUXmjIyVP3H0XOzKp3IMnC7evtyH0=" />
+                       sparkle:dsaSignature="MCwCFEmgBukObfznug8oRsC3e8DocKVXAhQJDO7ubd7ExEwGZ0lAvdw3vETVXQ==" />
         </item>
     </channel>
 </rss>
