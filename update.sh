@@ -17,6 +17,15 @@ appName=`basename "$RLSAPP"`
 
 if [[ -d "$RLSAPP" ]]; then
 
+	spctlRes=`spctl --verbose=4 --assess --type execute "$RLSAPP" 2>&1`
+	spctlPass=`echo ${spctlRes} | grep ": accepted"`
+	if [[ -n ${spctlPass} ]]; then
+		echo "Passed spctl"
+	else
+		echo "spctl verification failed"
+		exit 1
+	fi
+
 	# 得到版本信息
 	shortVer=`/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby scripts/getShortVersionString.rb "$RLSAPP"`
 	echo "ShortVersionString:      " $shortVer
