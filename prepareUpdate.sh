@@ -34,7 +34,7 @@ if [[ -d "$RLSAPP" ]]; then
 	echo "VersionNumber:           " $verNum
 
 	# 获取 压缩文件文件名
-	DEPLOYBIN="${CURDIR}/releases/MPlayerX-$shortVer.zip"
+	DEPLOYBIN="${CURDIR}/releases/${appName%.*}-$shortVer.zip"
 
     # 如果之前有拷贝就先删除
 	rm -Rf $DEPLOYBIN
