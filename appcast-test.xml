@@ -35,7 +35,7 @@ h2 {margin: 0.5em 0;}
                 </ul></div>
             ]]></description>
             <pubDate>Thu, 26 Dec 2013 15:23:30 +0900</pubDate>
-            <enclosure url="http://mplayerx.googlecode.com/files/MPlayerX-1.0.21.zip"
+            <enclosure url="https://downloads.sourceforge.net/project/mplayerx-osx/MPlayerX-1.0.21.zip"
                        sparkle:version="1718"
                        sparkle:shortVersionString="1.0.21"
                        length="35476468"
