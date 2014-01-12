@@ -8,6 +8,23 @@
         <item>
             <title>Version %VerStr%</title>
             <description><![CDATA[
+                <style type="text/css">
+@CHARSET "UTF-8";
+* {margin: 0;padding: 0;}
+body {font: normal 15px/18px helvetica,sans-serif;color: #000;background-color: #fff;padding: 1em;}
+h1 {font-size: 100%;}
+h2, h3, h4, h5, h6 {font-size: 90%;}
+a {color: #08c;}
+a:visited {color: #08c;}
+a:hover, a:focus {color: #08c;}
+ul, ol {margin-left: 2em;font-size: 80%;}
+li a {display: inline-block;text-decoration: none;}
+p {margin: 0 0 1.5em 0;}
+strong {font-weight: bold;}
+hr {display: none;}
+h2 {margin: 0.5em 0;}
+                </style>
+
                 <p>%ReleaseDate%</p>
                 <div><ul>
                     <li></li>
