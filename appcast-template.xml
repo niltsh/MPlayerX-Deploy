@@ -28,6 +28,8 @@ h2 {margin: 0.5em 0;}
                 <p>%ReleaseDate%</p>
                 <div><ul>
                     <li></li>
+                    <li></li>
+                    <li></li>
                 </ul></div>
             ]]></description>
             <pubDate>%Time%</pubDate>
