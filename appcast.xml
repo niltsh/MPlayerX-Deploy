@@ -25,7 +25,7 @@ hr {display: none;}
 h2 {margin: 0.5em 0;}
                 </style>
 
-                <p>2013/12/26</p>
+                <p>MPlayerX 1.0.21 - 2013/12/26</p>
                 <div><ul>
                     <li>Fix: output image is blurry.</li>
                     <li>Add support directly playing videos on vimeo.com, youku.com, instagram.com, traileraddict.com, techtv.mit.edu, and so on.</li>
@@ -36,7 +36,7 @@ h2 {margin: 0.5em 0;}
                 </ul></div>
             ]]></description>
             <pubDate>Thu, 26 Dec 2013 15:23:30 +0900</pubDate>
-            <enclosure url="http://mplayerx.googlecode.com/files/MPlayerX-1.0.21.zip"
+            <enclosure url="https://downloads.sourceforge.net/project/mplayerx-osx/MPlayerX-1.0.21.zip"
                        sparkle:version="1718"
                        sparkle:shortVersionString="1.0.21"
                        length="35476468"
