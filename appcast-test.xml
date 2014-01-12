@@ -6,28 +6,43 @@
         <description>MPlayerX</description>
         <language>en</language>
         <item>
-            <sparkle:minimumSystemVersion>10.8.1</sparkle:minimumSystemVersion>
-            <title>Version 1.0.17</title>
+            <title>Version 1.0.21</title>
             <description><![CDATA[
-                <p>2012/09/07</p>
+                <style type="text/css">
+@CHARSET "UTF-8";
+* {margin: 0;padding: 0;}
+body {font: normal 1em/1.25em helvetica,sans-serif;color: #000;background-color: #fff;padding: 1em;}
+h1 {font-size: 100%;}
+h2, h3, h4, h5, h6 {font-size: 90%;}
+a {color: #000;}
+a:visited {color: #000;}
+a:hover, a:focus {color: #000;}
+ul, ol {margin-left: 2em;font-size: 80%;}
+li a {display: block;text-decoration: none;}
+p {margin: 0 0 1.5em 0;}
+strong {font-weight: bold;}
+abbr {cursor: help;}
+address {font-style: normal;}
+hr {display: none;}
+h2 {margin: 0.5em 0;}
+                </style>
+                <p>2013/12/26</p>
                 <div><ul>
-                    <li>Hardware Accelerated Video Decoding boosted.</li>
-                    <li>New: scripting support added, which means <a href="https://flutterapp.com">Flutter</a>-ready now.</li>
-                    <li>Fix: three fingers swiping stopped working.</li>
-                    <li>Fix: in some mp3 and m4a files with album art, time/seek stopped working.</li>
-                    <li>Fix: when paused, display dimmed and Mac falls to sleep.</li>
-                    <li>Fix: video is wrongly decoded in some RealMedia files.</li>
-                    <li>Fix: the remaining time is wrong when playback speed is not 1x.</li>
-                    <li>Fix: the position of the play control always reset when app exits.</li>
+                    <li>Fix: output image is blurry.</li>
+                    <li>Add support directly playing videos on vimeo.com, youku.com, instagram.com, traileraddict.com, techtv.mit.edu, and so on.</li>
+                    <li>Simplification when directly play online videos, now you could enjoy youtube, vimeo with just one click or drag&drop.</li>
+                    <li style="list-style: none;">For details, please take a look at <a href="http://blog.mplayerx.org/blog/2013/12/26/its-getting-easier-to-open-online-videos/"><strong>this link</strong></a></li>
+                    <li>More responsive when opening URL.</li>
+                    <li>Fix: memleak in mplayer</li>
                 </ul></div>
             ]]></description>
-            <pubDate>Fri, 07 Sep 2012 16:02:52 +0900</pubDate>
-            <enclosure url="http://mplayerx.googlecode.com/files/MPlayerX-1.0.17.zip"
-                       sparkle:version="1627"
-                       sparkle:shortVersionString="1.0.17"
-                       length="34431074"
+            <pubDate>Thu, 26 Dec 2013 15:23:30 +0900</pubDate>
+            <enclosure url="http://mplayerx.googlecode.com/files/MPlayerX-1.0.21.zip"
+                       sparkle:version="1718"
+                       sparkle:shortVersionString="1.0.21"
+                       length="35476468"
                        type="application/octet-stream"
-                       sparkle:dsaSignature="MC0CFQCfzJeeLRVXsx7Vg1z4QTJVb0RjhgIUYWFTaxt+ruzQs4s81JcxkRCpimc=" />
+                       sparkle:dsaSignature="MCwCFEmgBukObfznug8oRsC3e8DocKVXAhQJDO7ubd7ExEwGZ0lAvdw3vETVXQ==" />
         </item>
     </channel>
 </rss>
