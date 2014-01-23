@@ -35,6 +35,7 @@ h2 {margin: 0.5em 0;}
                        sparkle:version="1741"
                        sparkle:shortVersionString="1.0.22"
                        length="6126999"
+                       MPX:MinVersion="1641"
                        type="application/octet-stream"
                        sparkle:dsaSignature="MCwCFF9UzAfIfXZ+b3cpzI8I2kPAqTh3AhQ4Y8LY6FTkM8af1n1IsmJVh0s4aw==" />
         </item>
