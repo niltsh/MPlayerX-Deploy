@@ -31,11 +31,11 @@ h2 {margin: 0.5em 0;}
                 </ul></div>
             ]]></description>
             <pubDate>Thu, 02 Jan 2014 22:43:46 +0900</pubDate>
+            <sparkle:minimumSystemVersion>1641</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/niltsh/MPlayerX-Deploy/releases/download/mplayer-test-0.0.1/MPlayerX.mplayer-1.0.22.zip"
                        sparkle:version="1741"
                        sparkle:shortVersionString="1.0.22"
                        length="6126999"
-                       MPX:MinVersion="1641"
                        type="application/octet-stream"
                        sparkle:dsaSignature="MCwCFF9UzAfIfXZ+b3cpzI8I2kPAqTh3AhQ4Y8LY6FTkM8af1n1IsmJVh0s4aw==" />
         </item>
