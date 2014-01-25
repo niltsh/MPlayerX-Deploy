@@ -7,34 +7,8 @@
         <language>en</language>
         <item>
             <title>Version 1.0.21</title>
-            <description><![CDATA[
-                <style type="text/css">
-@CHARSET "UTF-8";
-* {margin: 0;padding: 0;}
-body {font: normal 15px/18px helvetica,sans-serif;color: #000;background-color: #fff;padding: 1em;}
-h1 {font-size: 100%;}
-h2, h3, h4, h5, h6 {font-size: 90%;}
-a {color: #08c;}
-a:visited {color: #08c;}
-a:hover, a:focus {color: #08c;}
-ul, ol {margin-left: 2em;font-size: 80%;}
-li a {display: inline-block;text-decoration: none;}
-p {margin: 0 0 1.5em 0;}
-strong {font-weight: bold;}
-hr {display: none;}
-h2 {margin: 0.5em 0;}
-                </style>
-                <p>2013/12/26</p>
-                <div><ul>
-                    <li>Fix: output image is blurry.</li>
-                    <li>Add support directly playing videos on vimeo.com, youku.com, instagram.com, traileraddict.com, techtv.mit.edu, and so on.</li>
-                    <li>Simplification when directly play online videos, now you could enjoy youtube, vimeo with just one click or drag&drop.</li>
-                    <li style="list-style: none;">For details, please take a look at <a href="http://blog.mplayerx.org/blog/2013/12/26/its-getting-easier-to-open-online-videos/"><strong>this link</strong></a></li>
-                    <li>More responsive when opening URL.</li>
-                    <li>Fix: memleak in mplayer</li>
-                </ul></div>
-            ]]></description>
             <pubDate>Thu, 26 Dec 2013 15:23:30 +0900</pubDate>
+            <sparkle:releaseNotesLink>http://mplayerx.org/releasenotes/0.0.0.html</sparkle:releaseNotesLink>
             <enclosure url="https://downloads.sourceforge.net/project/mplayerx-osx/MPlayerX-1.0.21.zip"
                        sparkle:version="1718"
                        sparkle:shortVersionString="1.0.21"
