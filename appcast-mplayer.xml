@@ -39,5 +39,40 @@ h2 {margin: 0.5em 0;}
                        type="application/octet-stream"
                        sparkle:dsaSignature="MCwCFF9UzAfIfXZ+b3cpzI8I2kPAqTh3AhQ4Y8LY6FTkM8af1n1IsmJVh0s4aw==" />
         </item>
+
+        <item>
+            <title>Version 1.0.22</title>
+            <description><![CDATA[
+                <style type="text/css">
+@CHARSET "UTF-8";
+* {margin: 0;padding: 0;}
+body {font: normal 15px/18px helvetica,sans-serif;color: #000;background-color: #fff;padding: 1em;}
+h1 {font-size: 100%;}
+h2, h3, h4, h5, h6 {font-size: 90%;}
+a {color: #08c;}
+a:visited {color: #08c;}
+a:hover, a:focus {color: #08c;}
+ul, ol {margin-left: 2em;font-size: 80%;}
+li a {display: inline-block;text-decoration: none;}
+p {margin: 0 0 1.5em 0;}
+strong {font-weight: bold;}
+hr {display: none;}
+h2 {margin: 0.5em 0;}
+                </style>
+
+                <p>2014/01/02</p>
+                <div><ul>
+                    <li>init release</li>
+                </ul></div>
+            ]]></description>
+            <pubDate>Sat, 25 Jan 2014 17:38:21 +0900</pubDate>
+            <MPXMinVersion>1771</MPXMinVersion>
+            <enclosure url="https://github.com/niltsh/MPlayerX-Deploy/releases/download/test-0.0.3/MPlayerX.mplayer-1.0.22.zip"
+                       sparkle:version="1971"
+                       sparkle:shortVersionString="1.0.22"
+                       length="6193014"
+                       type="application/octet-stream"
+                       sparkle:dsaSignature="MCwCFFbp4/1RrBsLgKk595lexuFZrL3tAhREHPoVnhG00EOmpyO1C+nJzGHKfA==" />
+        </item>
     </channel>
 </rss>
