@@ -31,6 +31,8 @@ h2 {margin: 0.5em 0;}
                     <li></li>
                     <li></li>
                 </ul></div>
+                <p></p>
+                <p>For details, please visit <a href="http://mplayerx.org">http://mplayerx.org</a>.</p>
             ]]></description>
             <pubDate>%Time%</pubDate>
             <enclosure url="https://downloads.sourceforge.net/project/mplayerx-osx/MPlayerX-%VerStr%.zip"
