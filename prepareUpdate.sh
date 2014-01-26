@@ -33,8 +33,8 @@ if [[ -d "$RLSAPP" ]]; then
 	verNum=`/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby scripts/getVersion.rb "$RLSAPP"`
 	echo "VersionNumber:           " $verNum
 
-	verNum=`/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby scripts/getMPXMinVersion.rb "$RLSAPP"`
-	echo "MPXMinVersion:           " $verNum
+	mpxMin=`/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby scripts/getMPXMinVersion.rb "$RLSAPP"`
+	echo "MPXMinVersion:           " $mpxMin
 
 	# 获取 压缩文件文件名
 	DEPLOYBIN="${CURDIR}/releases/${appName%.*}-$shortVer.zip"
