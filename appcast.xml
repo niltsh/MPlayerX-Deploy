@@ -6,6 +6,7 @@
         <description>MPlayerX</description>
         <language>en</language>
         <item>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
             <title>Version 1.0.22</title>
             <description><![CDATA[
                 <style type="text/css">
