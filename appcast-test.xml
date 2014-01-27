@@ -48,7 +48,7 @@ h2 {margin: 0.5em 0;}
         </item>
 
         <item>
-            <sparkle:maximumSystemVersion>10.6.8</sparkle:maximumSystemVersion>
+            <sparkle:minimumSystemVersion>10.6.8</sparkle:minimumSystemVersion>
             <title>Version 1.0.22.1</title>
             <description><![CDATA[
                 <style type="text/css">
