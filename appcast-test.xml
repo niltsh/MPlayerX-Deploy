@@ -6,15 +6,82 @@
         <description>MPlayerX</description>
         <language>en</language>
         <item>
-            <title>Version 1.0.21</title>
-            <pubDate>Thu, 26 Dec 2013 15:23:30 +0900</pubDate>
-            <sparkle:releaseNotesLink>http://mplayerx.org/releasenotes/0.0.0.html</sparkle:releaseNotesLink>
-            <enclosure url="https://downloads.sourceforge.net/project/mplayerx-osx/MPlayerX-1.0.21.zip"
-                       sparkle:version="1718"
-                       sparkle:shortVersionString="1.0.21"
-                       length="35476468"
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+            <title>Version 1.0.22</title>
+            <description><![CDATA[
+                <style type="text/css">
+@CHARSET "UTF-8";
+* {margin: 0;padding: 0;}
+body {font: normal 15px/18px helvetica,sans-serif;color: #000;background-color: #fff;padding: 1em;}
+h1 {font-size: 100%;}
+h2, h3, h4, h5, h6 {font-size: 90%;}
+a {color: #08c;}
+a:visited {color: #08c;}
+a:hover, a:focus {color: #08c;}
+ul, ol {margin-left: 2em;font-size: 80%;}
+li a {display: inline-block;text-decoration: none;}
+p {margin: 0 0 1.5em 0;}
+strong {font-weight: bold;}
+hr {display: none;}
+h2 {margin: 0.5em 0;}
+                </style>
+
+                <p>MPlayerX 1.0.22 - 2014/01/26</p>
+                <div><ul>
+                    <li>Fix: some videos with CJK titles in youtube.com could not display correctly.</li>
+                    <li>Fix: Full screen misbehavior when disable separated space for each screen.</li>
+                    <li>Fix: MPlayerX's core crash due to some 10 bits H.264/AVC content.</li>
+                    <li>New: Auto Pause when minimized. (hidden feature)</li>
+                    <li>New: new encrypted bookmarks</li>
+                    <li>Fix: UI tweaks and code optimization for Mavericks.</li>
+                </ul></div>
+                <p></p>
+                <p>For details, please visit <a href="http://mplayerx.org">http://mplayerx.org</a>.</p>
+            ]]></description>
+            <pubDate>Sun, 26 Jan 2014 21:57:16 +0900</pubDate>
+            <enclosure url="https://downloads.sourceforge.net/project/mplayerx-osx/MPlayerX-1.0.22.zip"
+                       sparkle:version="1777"
+                       sparkle:shortVersionString="1.0.22"
+                       length="35574225"
                        type="application/octet-stream"
-                       sparkle:dsaSignature="MCwCFEmgBukObfznug8oRsC3e8DocKVXAhQJDO7ubd7ExEwGZ0lAvdw3vETVXQ==" />
+                       sparkle:dsaSignature="MCwCFGmUtm1u17LrbDlDkUCZ/1G6Qg9CAhRrMJgM6vZkAZYpbWyl7d4NzYtvXA==" />
+        </item>
+
+        <item>
+            <sparkle:maximumSystemVersion>10.6.8</sparkle:maximumSystemVersion>
+            <title>Version 1.0.22.1</title>
+            <description><![CDATA[
+                <style type="text/css">
+@CHARSET "UTF-8";
+* {margin: 0;padding: 0;}
+body {font: normal 15px/18px helvetica,sans-serif;color: #000;background-color: #fff;padding: 1em;}
+h1 {font-size: 100%;}
+h2, h3, h4, h5, h6 {font-size: 90%;}
+a {color: #08c;}
+a:visited {color: #08c;}
+a:hover, a:focus {color: #08c;}
+ul, ol {margin-left: 2em;font-size: 80%;}
+li a {display: inline-block;text-decoration: none;}
+p {margin: 0 0 1.5em 0;}
+strong {font-weight: bold;}
+hr {display: none;}
+h2 {margin: 0.5em 0;}
+                </style>
+
+                <p>MPlayerX 1.0.22.1 - 2014/01/27</p>
+                <div><ul>
+                    <li>Fix crashing in Snow Leopard 10.6</li>
+                </ul></div>
+                <p></p>
+                <p>For details, please visit <a href="http://mplayerx.org">http://mplayerx.org</a>.</p>
+            ]]></description>
+            <pubDate>Mon, 27 Jan 2014 21:16:42 +0900</pubDate>
+            <enclosure url="https://downloads.sourceforge.net/project/mplayerx-osx/MPlayerX-1.0.22.1.zip"
+                       sparkle:version="1785"
+                       sparkle:shortVersionString="1.0.22.1"
+                       length="35574326"
+                       type="application/octet-stream"
+                       sparkle:dsaSignature="MC4CFQCcmKBOrio1VaM3UrERyfH4y301SwIVAKZLOBYVZ749q9Hm/528F10o2q8E" />
         </item>
     </channel>
 </rss>
