@@ -26,14 +26,15 @@ if [[ -d "$RLSAPP" ]]; then
 		exit 1
 	fi
 
+	infoFile="${RLSAPP}/Contents/Info.plist"
 	# 得到版本信息
-	shortVer=`/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby scripts/getShortVersionString.rb "$RLSAPP"`
+	shortVer=`/usr/libexec/PlistBuddy -c 'Print:CFBundleShortVersionString' "${infoFile}"`
 	echo "ShortVersionString:      " $shortVer
 
-	verNum=`/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby scripts/getVersion.rb "$RLSAPP"`
+	verNum=`/usr/libexec/PlistBuddy -c 'Print:CFBundleVersion' "${infoFile}"`
 	echo "VersionNumber:           " $verNum
 
-	mpxMin=`/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby scripts/getMPXMinVersion.rb "$RLSAPP"`
+	mpxMin=`/usr/libexec/PlistBuddy -c 'Print:MPXMinVersion' "${infoFile}"`
 	echo "MPXMinVersion:           " $mpxMin
 
 	# 获取 压缩文件文件名
