@@ -1,18 +1,22 @@
 
-PWD=`pwd`
-
-if [[ $# != 1 ]]; then
-	echo "./upload-sourceforge.sh [版本编号]"
+if [[ $# -lt 1 ]]; then
+	echo "./upload-sourceforge.sh <文件路径> [服务器端子文件夹名称]"
 	exit
 fi
 
-BIN=$PWD/releases/MPlayerX-$1.zip
+BIN=${1}
 
 if [[ -f $BIN ]]; then
     SFUSER=quzongyao
     SFPROJ=mplayerx-osx
 
-    scp ${BIN} ${SFUSER}@frs.sourceforge.net:/home/frs/project/${SFPROJ}
+	if [[ $2 ]]; then
+		echo "scp ${BIN} ${SFUSER}@frs.sourceforge.net:/home/frs/project/${SFPROJ}/$2"
+		scp ${BIN} ${SFUSER}@frs.sourceforge.net:/home/frs/project/${SFPROJ}/$2
+	else
+	    echo "scp ${BIN} ${SFUSER}@frs.sourceforge.net:/home/frs/project/${SFPROJ}"
+		scp ${BIN} ${SFUSER}@frs.sourceforge.net:/home/frs/project/${SFPROJ}
+	fi
 
 	md5 $BIN
 else
