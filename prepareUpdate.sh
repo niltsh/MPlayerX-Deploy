@@ -13,7 +13,9 @@ KEYTEMP="key.txt"
 PRIVKEY="key2.txt"
 
 CURDIR="$PWD"
-appName=`basename "$RLSAPP"`
+appFullName=`basename "$RLSAPP"`
+appName="${appFullName%.*}"
+appExt="${appFullName##*.}"
 
 if [[ -d "$RLSAPP" ]]; then
 
@@ -38,14 +40,14 @@ if [[ -d "$RLSAPP" ]]; then
 	echo "MPXMinVersion:           " $mpxMin
 
 	# 获取 压缩文件文件名
-	DEPLOYBIN="${CURDIR}/releases/${appName%.*}-$shortVer.zip"
+	DEPLOYBIN="${CURDIR}/releases/${appName}-$shortVer-${verNum}.zip"
 
     # 如果之前有拷贝就先删除
 	rm -Rf $DEPLOYBIN
 
 	# 压缩APP文件
     cd "$RLSAPP/.."
-    zip -ry "$DEPLOYBIN" "$appName" > /dev/null
+    zip -ry "$DEPLOYBIN" "$appFullName" > /dev/null
     cd "${CURDIR}"
 
 	# 获取压缩文件尺寸
@@ -66,7 +68,13 @@ if [[ -d "$RLSAPP" ]]; then
 	rm -Rf $PRIVKEY
 	echo "Signature:               " $signature
 
-	cat appcast-template.xml | sed -e "s|%ReleaseDate%|${releaseDate}|g" | sed -e "s|%VerStr%|${shortVer}|g" | sed -e "s|%VerNum%|${verNum}|g" | sed -e "s|%Time%|${binTime}|g" | sed -e "s|%FileSize%|${fileSize}|g" | sed -e "s|%Signature%|${signature}|g" > appcast.xml
+	if [[ ${appExt} == "app" ]]; then
+		echo "Update application"
+		cat appcast-template.xml | sed -e "s|%ReleaseDate%|${releaseDate}|g" | sed -e "s|%VerStr%|${shortVer}|g" | sed -e "s|%VerNum%|${verNum}|g" | sed -e "s|%Time%|${binTime}|g" | sed -e "s|%FileSize%|${fileSize}|g" | sed -e "s|%Signature%|${signature}|g" > appcast.xml
+	elif [[ ${appExt} == "bundle" ]]; then
+		echo "Update bundle"
+		cat appcast-bundle-template.xml | sed -e "s|%ReleaseDate%|${releaseDate}|g" | sed -e "s|%VerStr%|${shortVer}|g" | sed -e "s|%VerNum%|${verNum}|g" | sed -e "s|%Time%|${binTime}|g" | sed -e "s|%FileSize%|${fileSize}|g" | sed -e "s|%Signature%|${signature}|g" | sed -e "s|%BundleName%|${appName}|g" | sed -e "s|%MPXMinVer%|${mpxMin}|g" > appcast-${appName}.xml
+	fi
 else
 	echo "没有找到二进制文件，请确认。"
 fi
