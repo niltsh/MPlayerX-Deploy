@@ -36,9 +36,6 @@ if [[ -d "$RLSAPP" ]]; then
 	verNum=`/usr/libexec/PlistBuddy -c 'Print:CFBundleVersion' "${infoFile}"`
 	echo "VersionNumber:           " $verNum
 
-	mpxMin=`/usr/libexec/PlistBuddy -c 'Print:MPXMinVersion' "${infoFile}"`
-	echo "MPXMinVersion:           " $mpxMin
-
 	# 获取 压缩文件文件名
 	DEPLOYBIN="${CURDIR}/releases/${appName}-$shortVer-${verNum}.zip"
 
@@ -69,9 +66,15 @@ if [[ -d "$RLSAPP" ]]; then
 	echo "Signature:               " $signature
 
 	if [[ ${appExt} == "app" ]]; then
+
 		echo "Update application"
 		cat appcast-template.xml | sed -e "s|%ReleaseDate%|${releaseDate}|g" | sed -e "s|%VerStr%|${shortVer}|g" | sed -e "s|%VerNum%|${verNum}|g" | sed -e "s|%Time%|${binTime}|g" | sed -e "s|%FileSize%|${fileSize}|g" | sed -e "s|%Signature%|${signature}|g" > appcast.xml
+
 	elif [[ ${appExt} == "bundle" ]]; then
+
+		mpxMin=`/usr/libexec/PlistBuddy -c 'Print:MPXMinVersion' "${infoFile}"`
+		echo "MPXMinVersion:           " $mpxMin
+
 		echo "Update bundle"
 		cat appcast-bundle-template.xml | sed -e "s|%ReleaseDate%|${releaseDate}|g" | sed -e "s|%VerStr%|${shortVer}|g" | sed -e "s|%VerNum%|${verNum}|g" | sed -e "s|%Time%|${binTime}|g" | sed -e "s|%FileSize%|${fileSize}|g" | sed -e "s|%Signature%|${signature}|g" | sed -e "s|%BundleName%|${appName}|g" | sed -e "s|%MPXMinVer%|${mpxMin}|g" > appcast-${appName}.xml
 	fi
