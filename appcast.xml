@@ -7,7 +7,7 @@
         <language>en</language>
         <item>
             <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
-            <title>Version 1.0.22</title>
+            <title>Version 1.1.0</title>
             <description><![CDATA[
                 <style type="text/css">
 @CHARSET "UTF-8";
@@ -26,25 +26,24 @@ hr {display: none;}
 h2 {margin: 0.5em 0;}
                 </style>
 
-                <p>MPlayerX 1.0.22 - 2014/01/26</p>
+                <p>MPlayerX 1.1.0 - 2015/06/13</p>
                 <div><ul>
-                    <li>Fix: some videos with CJK titles in youtube.com could not display correctly.</li>
-                    <li>Fix: Full screen misbehavior when disable separated space for each screen.</li>
-                    <li>Fix: MPlayerX's core crash due to some 10 bits H.264/AVC content.</li>
-                    <li>New: Auto Pause when minimized. (hidden feature)</li>
-                    <li>New: new encrypted bookmarks</li>
-                    <li>Fix: UI tweaks and code optimization for Mavericks.</li>
+                    <li>Adopt Yosemite UI. (sorry for keeping you waiting so long.)</li>
+                    <li>Add Partial Update. Please check for details at <a href="http://blog.mplayerx.org/blog/2015/06/13/1-dot-1-0-is-out/">here</a>.</li>
+                    <li>Support HTTPS online playback. (directly playing videos in youtube.com is back now)</li>
+                    <li>Update to the latest FFmpeg and mplayer. So various decoding issues such as HEVC, aac, mp4 should be fixed.</li>
+                    <li>Add some hidden settings, please check <a href="http://blog.mplayerx.org/blog/2013/02/01/hidden-settings/">here</a>.</li>
                 </ul></div>
                 <p></p>
                 <p>For details, please visit <a href="http://mplayerx.org">http://mplayerx.org</a>.</p>
             ]]></description>
-            <pubDate>Sun, 26 Jan 2014 21:57:16 +0900</pubDate>
-            <enclosure url="https://downloads.sourceforge.net/project/mplayerx-osx/MPlayerX-1.0.22.zip"
-                       sparkle:version="1777"
-                       sparkle:shortVersionString="1.0.22"
-                       length="35574225"
+            <pubDate>Sat, 13 Jun 2015 01:07:35 +0900</pubDate>
+            <enclosure url="https://downloads.sourceforge.net/project/mplayerx-osx/MPlayerX-1.1.0-1854.zip"
+                       sparkle:version="1854"
+                       sparkle:shortVersionString="1.1.0"
+                       length="38831885"
                        type="application/octet-stream"
-                       sparkle:dsaSignature="MCwCFGmUtm1u17LrbDlDkUCZ/1G6Qg9CAhRrMJgM6vZkAZYpbWyl7d4NzYtvXA==" />
+                       sparkle:dsaSignature="MCwCFDzewz0WKead+UkgnjWwcZ9YvFm7AhRQZTaFBVyKdiU3PfDVzirgIJZcew==" />
         </item>
 
         <item>
