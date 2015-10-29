@@ -7,7 +7,7 @@
         <language>en</language>
         <item>
             <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
-            <title>Version 1.1.0</title>
+            <title>Version 1.1.1</title>
             <description><![CDATA[
                 <style type="text/css">
 @CHARSET "UTF-8";
@@ -26,61 +26,27 @@ hr {display: none;}
 h2 {margin: 0.5em 0;}
                 </style>
 
-                <p>MPlayerX 1.1.0 - 2015/06/13</p>
+                <p>MPlayerX 1.1.1 - 2015/10/29</p>
                 <div><ul>
-                    <li>Adopt Yosemite UI. (sorry for keeping you waiting so long.)</li>
-                    <li>Add Partial Update. Please check for details at <a href="http://blog.mplayerx.org/blog/2015/06/13/1-dot-1-0-is-out/">here</a>.</li>
-                    <li>Support HTTPS online playback. (directly playing videos in youtube.com is back now)</li>
-                    <li>Update to the latest FFmpeg and mplayer. So various decoding issues such as HEVC, aac, mp4 should be fixed.</li>
-                    <li>Add some hidden settings, please check <a href="http://blog.mplayerx.org/blog/2013/02/01/hidden-settings/">here</a>.</li>
+                    <li>Fix the album art in audio file.</li>
+                    <li>Fix display issues when changing window size.</li>
+                    <li>Fix window does not disappear when finishing the playback in EI Capitan.</li>
+                    <li>Fix pixelation in EI Capitan.</li>
+                    <li>Add hidden setting: AsyncMode.</li>
+                    <li>Change the app icon.</li>
+                    <li>several trivial issues in EI Capitan.</li>
+                    <li>KNOWN ISSUE: MPlayerX now does NOT work well when enter/exit Fullscreen in EI Capitan by dragging the window in Mission Control. It is because that the Fullscreen behavior changed so much from 10.6 and 10.11. Now I am trying to figure out a way to fix it without breaking the backward-compatbility, but at worst, it could be possbile that MPX will drop 10.7 and 10.8 support from next release.</li>
                 </ul></div>
                 <p></p>
                 <p>For details, please visit <a href="http://mplayerx.org">http://mplayerx.org</a>.</p>
             ]]></description>
-            <pubDate>Sat, 13 Jun 2015 01:07:35 +0900</pubDate>
-            <enclosure url="https://downloads.sourceforge.net/project/mplayerx-osx/MPlayerX-1.1.0-1854.zip"
-                       sparkle:version="1854"
-                       sparkle:shortVersionString="1.1.0"
-                       length="38831885"
+            <pubDate>Thu, 29 Oct 2015 21:44:52 +0900</pubDate>
+            <enclosure url="https://downloads.sourceforge.net/project/mplayerx-osx/MPlayerX-1.1.1-1887.zip"
+                       sparkle:version="1887"
+                       sparkle:shortVersionString="1.1.1"
+                       length="38329967"
                        type="application/octet-stream"
-                       sparkle:dsaSignature="MCwCFDzewz0WKead+UkgnjWwcZ9YvFm7AhRQZTaFBVyKdiU3PfDVzirgIJZcew==" />
-        </item>
-
-        <item>
-            <sparkle:maximumSystemVersion>10.6.8</sparkle:maximumSystemVersion>
-            <title>Version 1.0.22.1</title>
-            <description><![CDATA[
-                <style type="text/css">
-@CHARSET "UTF-8";
-* {margin: 0;padding: 0;}
-body {font: normal 15px/18px helvetica,sans-serif;color: #000;background-color: #fff;padding: 1em;}
-h1 {font-size: 100%;}
-h2, h3, h4, h5, h6 {font-size: 90%;}
-a {color: #08c;}
-a:visited {color: #08c;}
-a:hover, a:focus {color: #08c;}
-ul, ol {margin-left: 2em;font-size: 80%;}
-li a {display: inline-block;text-decoration: none;}
-p {margin: 0 0 1.5em 0;}
-strong {font-weight: bold;}
-hr {display: none;}
-h2 {margin: 0.5em 0;}
-                </style>
-
-                <p>MPlayerX 1.0.22.1 - 2014/01/27</p>
-                <div><ul>
-                    <li>Fix crashing in Snow Leopard 10.6</li>
-                </ul></div>
-                <p></p>
-                <p>For details, please visit <a href="http://mplayerx.org">http://mplayerx.org</a>.</p>
-            ]]></description>
-            <pubDate>Mon, 27 Jan 2014 21:16:42 +0900</pubDate>
-            <enclosure url="https://downloads.sourceforge.net/project/mplayerx-osx/MPlayerX-1.0.22.1.zip"
-                       sparkle:version="1785"
-                       sparkle:shortVersionString="1.0.22.1"
-                       length="35574326"
-                       type="application/octet-stream"
-                       sparkle:dsaSignature="MC4CFQCcmKBOrio1VaM3UrERyfH4y301SwIVAKZLOBYVZ749q9Hm/528F10o2q8E" />
+                       sparkle:dsaSignature="MCwCFE6dMfBsnfwcmu6PLm346V6TGEqcAhREWRo7QHPdhWFcxQk/ePbbRcIrFQ==" />
         </item>
     </channel>
 </rss>
