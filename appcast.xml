@@ -7,7 +7,7 @@
         <language>en</language>
         <item>
             <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
-            <title>Version 1.1.1</title>
+            <title>Version 1.1.2</title>
             <description><![CDATA[
                 <style type="text/css">
 @CHARSET "UTF-8";
@@ -26,27 +26,23 @@ hr {display: none;}
 h2 {margin: 0.5em 0;}
                 </style>
 
-                <p>MPlayerX 1.1.1 - 2015/10/29</p>
+                <p>MPlayerX 1.1.2 - 2016/06/12</p>
                 <div><ul>
-                    <li>Fix the album art in audio file.</li>
-                    <li>Fix display issues when changing window size.</li>
-                    <li>Fix window does not disappear when finishing the playback in EI Capitan.</li>
-                    <li>Fix pixelation in EI Capitan.</li>
-                    <li>Add hidden setting: AsyncMode.</li>
-                    <li>Change the app icon.</li>
-                    <li>several trivial issues in EI Capitan.</li>
-                    <li>KNOWN ISSUE: MPlayerX now does NOT work well when enter/exit Fullscreen in EI Capitan by dragging the window in Mission Control. It is because that the Fullscreen behavior changed so much from 10.6 and 10.11. Now I am trying to figure out a way to fix it without breaking the backward-compatbility, but at worst, it could be possbile that MPX will drop 10.7 and 10.8 support from next release.</li>
+                    <li>Fix: pixelation when fast-forward or backword when usning hardware decoding.</li>
+                    <li>Add SpeedMode.</li>
+                    <li>fix several UI issues in multiple languages.</li>
+                    <li>performance tweak and stability fixes.</li>
                 </ul></div>
                 <p></p>
                 <p>For details, please visit <a href="http://mplayerx.org">http://mplayerx.org</a>.</p>
             ]]></description>
-            <pubDate>Thu, 29 Oct 2015 21:44:52 +0900</pubDate>
-            <enclosure url="https://downloads.sourceforge.net/project/mplayerx-osx/MPlayerX-1.1.1-1887.zip"
-                       sparkle:version="1887"
-                       sparkle:shortVersionString="1.1.1"
-                       length="38329967"
+            <pubDate>Sun, 12 Jun 2016 12:29:07 +0900</pubDate>
+            <enclosure url="https://downloads.sourceforge.net/project/mplayerx-osx/MPlayerX-1.1.2-1909.zip"
+                       sparkle:version="1909"
+                       sparkle:shortVersionString="1.1.2"
+                       length="38845340"
                        type="application/octet-stream"
-                       sparkle:dsaSignature="MCwCFE6dMfBsnfwcmu6PLm346V6TGEqcAhREWRo7QHPdhWFcxQk/ePbbRcIrFQ==" />
+                       sparkle:dsaSignature="MC0CFHBrVg6gWLI46lZxRVHHcVHJynm7AhUAgdvd/fU4lv9LUO97/L8lGCu4A6k=" />
         </item>
     </channel>
 </rss>
