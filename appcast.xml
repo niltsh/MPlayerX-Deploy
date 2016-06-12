@@ -37,7 +37,7 @@ h2 {margin: 0.5em 0;}
                 <p>For details, please visit <a href="http://mplayerx.org">http://mplayerx.org</a>.</p>
             ]]></description>
             <pubDate>Sun, 12 Jun 2016 12:29:07 +0900</pubDate>
-            <enclosure url="https://dl.bintray.com/niltsh/MPlayerX-download/exec/1.1.2/MPlayerX-1.1.2-1909.zip"
+            <enclosure url="https://downloads.sourceforge.net/project/mplayerx-osx/MPlayerX-1.1.2-1909.zip"
                        sparkle:version="1909"
                        sparkle:shortVersionString="1.1.2"
                        length="38845340"
