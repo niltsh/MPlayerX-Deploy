@@ -28,7 +28,7 @@ h2 {margin: 0.5em 0;}
 
                 <p>MPlayerX 1.1.2 - 2016/06/12</p>
                 <div><ul>
-                    <li>Fix: pixelation when fast-forward or backword when usning hardware decoding.</li>
+                    <li>Fix: pixelation when fast-forward or backword when using hardware decoding.</li>
                     <li>Add SpeedMode.</li>
                     <li>fix several UI issues in multiple languages.</li>
                     <li>performance tweak and stability fixes.</li>
